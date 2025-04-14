@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Knowledge Check</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<!--Changed body background color to light blue-->
+
+<body class="bg-info">
+   
+    <!--responsive nav bar-->
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Frameworks</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <!--Form with first and last name side by side with email and password validation-->
+   
+    <div class="container mt-5">
+        <h2 class="text-center text-success">Registration Form</h2>
+        <form class="border p-4 shadow-sm bg-light">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                <label for="First Name" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="First Name" placeholder="Enter your First Name">
+            </div>
+            <div class="col-md-6">
+                <label for="Last Name" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="Last Name" placeholder="Enter your Last Name">
+            </div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control is-invalid" id="email" placeholder="Enter your email"> <div class="invalid-feedback">
+                    Username is required.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control is-invalid" id="password" placeholder="Enter your password"> <div class="invalid-feedback">
+                    Username is required.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label>
+                    <input type="checkbox" name="terms" required> I agree to the <a href=""> Terms and Conditions</a> 
+                </label>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Submit</button>
+        </form>
+    </div>
+
+    <!--Responsive table with striped and hoverable rows-->
+   
+    <div class="container mt-5">
+        <h2 class="text-center text-warning">User Data</h2>
+        <table class="table table-striped table-hover border">
+            <thead class="table-dark">
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Billy Bob</td>
+                    <td>Billy.Bob@example.com</td>
+                    <td>1/04/2025</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sally Sue</td>
+                    <td>Sally.sue@example.com</td>
+                    <td>1/17/2025</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Frank Foster</td>
+                    <td>Frank.Foster@example.com</td>
+                    <td>12/30/2024</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Danny Dover</td>
+                    <td>Danny.Dover@example.com</td>
+                    <td>2/23/2025</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Zack Zaddle</td>
+                    <td>Zack.Zaddle@example.com</td>
+                    <td>3/14/2025</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<!--Responsive image-->
+
+<div class="container mt-5">
+    <h2 class="text-center text-danger">Responsive Image</h2>
+    <img src="https://wallpapercave.com/wp/wp5433339.jpg" class="img-fluid"/>
+</div>
+
+<!--Rounded image-->
+
+<div class="container mt-5">
+        <img src="https://c.wallhere.com/photos/4b/9b/AI_art_landscape_clouds_anime_sky_digital_art_reflection_painting-2210321.jpg!d" class="img-fluid rounded-circle"/>
+    </div>
+</div>
+
+<!--Visible button-->
+
+<div class="container mt-5">
+<button class="btn btn-primary d-block">Visible Button</button>
+</div>
+
+<!--Hidden image on smaller screens-->
+
+<div class="container mt-5">
+<button class="btn btn-primary d-none d-md-block">Hidden Button</button>
+</div>
+</body>
+</html>
